@@ -1,0 +1,23 @@
+css
+/* Base styles that work in any orientation */
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Media queries for orientation */
+@media screen and (orientation: portrait) {
+  /* Styles optimized for portrait mode */
+  .app-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  /* Styles optimized for landscape mode */
+  .app-content {
+    flex-direction: row;
+  }
+}
